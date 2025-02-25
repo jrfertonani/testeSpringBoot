@@ -25,10 +25,10 @@ export class FormularioComponent implements OnInit {
 
     this.produtoForm = new FormGroup({
       id: new FormControl(this.dadosProduto ? this.dadosProduto.id : 0),
-      nome: new FormControl(this.dadosProduto ? this.dadosProduto.descricao : ''),
-      email: new FormControl(this.dadosProduto ? this.dadosProduto.validade : ''),
-      salario: new FormControl(this.dadosProduto ? this.dadosProduto.cadastro : ''),
-      cpf: new FormControl(this.dadosProduto ? this.dadosProduto.preco : ''),
+      descricao: new FormControl(this.dadosProduto ? this.dadosProduto.descricao : ''),
+      validade: new FormControl(this.dadosProduto ? this.dadosProduto.validade : null),
+      cadastro: new FormControl(this.dadosProduto ? this.dadosProduto.cadastro : null),
+      preco: new FormControl(this.dadosProduto ? this.dadosProduto.preco : 0),
       situacao: new FormControl(this.dadosProduto ? this.dadosProduto.ativo : true),
     });
   }
