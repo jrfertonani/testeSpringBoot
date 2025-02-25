@@ -32,7 +32,8 @@ export class ProdutosService {
   }
 
   editarProduto(produto : Produtos): Observable <Produtos>{
-    return this.http.put<Produtos>(this.URL,produto);
+    const url = `${this.URL}/${produto.id}`
+    return this.http.put<Produtos>(url,produto);
   }
 
 }
