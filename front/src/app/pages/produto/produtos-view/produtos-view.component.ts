@@ -29,9 +29,12 @@ export class ProdutosViewComponent implements OnInit{
     const target = event.target as HTMLInputElement;
     const value = target.value.toLowerCase();
 
-    this.produtos = this.produtosGeral.filter(produto => {
-      return produto.descricao.toLowerCase().includes(value);
+    this.produtos = this.produtosGeral.filter(produtos => {
+      return produtos.descricao.toLowerCase().includes(value);
     });
+
+    console.log("TARGET", target);
+    console.log("VALUE", value);
   }
 
   deletar(id:number | undefined){

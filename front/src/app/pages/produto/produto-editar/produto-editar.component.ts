@@ -37,8 +37,6 @@ export class ProdutoEditarComponent implements OnInit {
 
     editarProduto(produtos: Produtos){
     this.produtoService.editarProduto(produtos).subscribe(produtos => {
-      console.log(4);
-      console.log("cadastrou");
       this.router.navigate(['/produtos']);
     })
 

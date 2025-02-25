@@ -1,10 +1,10 @@
 <div class="conteiner mt-5">
   <h1>{{ descTitulo }}</h1>
-  <form [formGroup]="produtoForm" (ngSubmit)="submit()" #formDit="ngForm">
+  <form class="row g-3 needs-validation" novalidate [formGroup]="produtoForm" (ngSubmit)="submit()" #formDit="ngForm" >
     <div class="mt-3">
       <label class="form-label"> Descrição</label>
-      <input type="text" placeholder="Insira um descrição!" class="form-control" formControlName="descricao"/>
-    </div>
+      <input type="text" placeholder="Maximo de 50 caracteres!" class="form-control" maxlength="50" formControlName="descricao"/>
+  </div>
 
     <div class="mt-3">
       <label class="form-label"> Validade</label>
@@ -18,7 +18,7 @@
 
     <div class="mt-3">
       <label class="form-label"> Preço</label>
-      <input type="number" placeholder="Insira o Preço!" class="form-control" formControlName="preco"/>
+      <input type="number" placeholder="R$ 000000,00" [maxLength]="13" mask="separator.2" thousandSeparator="." prefix="R$ " class="form-control" formControlName="preco"/>
     </div>
 
     <div class="mt-3">
