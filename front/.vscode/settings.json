@@ -4,6 +4,7 @@
         "cadastro",
         "descricao",
         "preco",
+        "produtos",
         "validade"
     ]
 }
