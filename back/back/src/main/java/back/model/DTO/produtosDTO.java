@@ -11,12 +11,14 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 public class produtosDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
+    private Long id;
     private String descricao;
     private LocalDate validade;
     private LocalDate cadastro;

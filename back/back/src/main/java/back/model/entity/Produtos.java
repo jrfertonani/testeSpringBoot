@@ -10,6 +10,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -27,11 +28,9 @@ public class Produtos implements Serializable {
     private String descricao;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    @Column(nullable = false)
     private LocalDate validade;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    @Column(nullable = false)
     private LocalDate cadastro;
 
     @Column(precision = 13, scale = 2)
