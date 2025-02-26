@@ -43,6 +43,8 @@ Este projeto demonstra uma aplicação full stack completa, utilizando Spring Bo
 
    * mvn spring-boot:run
 
+   * localhost/8081
+
 ### Frontend
 
    * npm install
