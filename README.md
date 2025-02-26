@@ -37,7 +37,7 @@ Este projeto demonstra uma aplicação full stack completa, utilizando Spring Bo
   
 ### MySql
 
-   * Criar new_schema "testespring" 
+   * Criar new_schema "testeSpringBoot" 
 
 ### Backend
 
